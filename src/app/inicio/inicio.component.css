@@ -1,0 +1,414 @@
+ /* Estilos básicos para el header */
+ .header-container {
+    background-color: #f3aacb;
+    padding: 23px;
+}
+
+.main-pri {
+    background-color: #f8f8f8;
+}
+
+.Titulo h1{
+    color: #f3aacb;
+    cursor: pointer;
+    font-size: 63px;
+    margin-top: -8px;
+    font-family: "Lobster", sans-serif;
+    font-style: normal;
+    text-align: center;
+    background-color: #f8f8f8;
+    
+  }
+
+.Titulo img{
+    cursor: pointer;
+    width: 150px;
+    height: 150px;
+    transform: translateY(-142px) translateX(705px);
+}
+  
+
+.container {
+    display: flex; /* Coloca los elementos en una fila horizontal */
+    gap: 20px; /* Espacio entre las palabras */
+    justify-content: center; /* Centra los elementos en el contenedor */
+    align-items: center; /* Alinea verticalmente los elementos */
+}
+
+.p1, .p2, .p3 {
+    cursor: pointer;
+    font-size: 15px;
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-style: normal;
+    color: white;
+    border-radius: 20px; /* Bordes redondeados */
+    padding: 10px 15px; /* Espaciado interno personalizable */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.p1:hover, .p2:hover, .p3:hover {
+    background-color:  white;/* Fondo cambia al color de texto */
+    color: #f3aacb; /* Texto cambia a blanco en hover */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.header-container img{
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    float: right;
+    transform: translateY(-30px);
+}
+
+.header-title {
+    font-size: 24px;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+
+.Sobre-N h2{
+    font-size: 32px;
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-style: normal;
+    transform: translateY(-130px) translateX(85px);
+}
+
+.Sobre-N p{
+    font-size: 12.5px;
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+    transform: translateY(-140px) translateX(85px);
+}
+
+.Sobre-N img{
+    transform: translateY(-490px) translateX(750px);
+    cursor: pointer;
+}
+
+.contenedor-vermas {
+    margin-left: 80px;
+    margin-top: -630px;
+}
+
+.vermas {
+    cursor: pointer;
+    font-size: 15px;
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-style: normal;
+    border: 2px solid #f079af;
+    background-color: white;
+    color: #ff0073;
+    border-radius: 20px; /* Bordes redondeados */
+    padding: 10px 15px; /* Espaciado interno personalizable */
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.vermas:hover {
+    background-color: white; /* Cambia color de fondo */
+    color: #ff0073;             /* Cambia color del texto */
+    transform: scale(1.1);    /* Amplía sin afectar su posición */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+    cursor: pointer;
+}
+
+.T-productos {
+    margin-left: 20px;
+    text-align: left;
+    font-size: 22px; /* Ajusta el tamaño del título */
+    font-family: "Poppins", serif;
+    font-weight: 600;
+}
+
+.product-card {
+    width: 250px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin: 15px;
+    font-family: Arial, sans-serif;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efecto de transición */
+  }
+  
+  .product-card:hover {
+    transform: translateY(-5px); /* Eleva la tarjeta cuando se pasa el cursor */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Más sombra para un efecto flotante */
+  }
+  
+  .product-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .product-card:hover .product-image {
+    transform: scale(1.05); /* Agranda la imagen ligeramente al hacer hover */
+  }
+  
+  .product-info {
+    padding: 15px;
+  }
+  
+  .product-name {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .product-description {
+    font-size: 0.9em;
+    color: #555;
+    margin: 10px 0;
+  }
+  
+  .product-material,
+  .product-price {
+    font-size: 1em;
+    margin: 5px 0;
+  }
+  
+  .product-price {
+    color: #28a745;
+    font-weight: bold;
+  }
+
+  .product-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #FF69B4;
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    border-radius: 0 0 10px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+/* Estilos para centrar el título de Preguntas frecuentes */
+.T-preguntasF {
+    text-align: center;
+    font-size: 22px; /* Ajusta el tamaño del título */
+    font-family: "Poppins", serif;
+    font-weight: 600;
+}
+
+/* Ajuste para las tarjetas */
+.preguntas-f {
+    display: flex;
+    gap: 20px; /* Mantiene el espacio entre tarjetas */
+    font-size: 14px;
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+/* Estilo para las tarjetas */
+.pregunta-1, .pregunta-2, .pregunta-3 {
+    background-color: #fdeaf2; /* Fondo rosado claro */
+    border: 2px solid #f079af; /* Borde del color principal */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 15px; /* Espaciado interno */
+    flex: 1; /* Las tarjetas ocupan el mismo tamaño */
+    max-width: 30%; /* Limita el ancho máximo de cada tarjeta */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    text-align: center; /* Centra el contenido de las tarjetas */
+}
+
+.pregunta-1:hover, .pregunta-2:hover, .pregunta-3:hover {
+    transform: scale(1.02); /* Ampliar un poco al pasar el mouse */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Más sombra */
+}
+
+/* Título de cada tarjeta */
+.pregunta-1 h4, .pregunta-2 h4, .pregunta-3 h4 {
+    color: #ff0073; /* Color principal */
+    font-size: 18px; /* Tamaño del título */
+    font-weight: 600;
+    margin-bottom: 10px; /* Espaciado inferior */
+}
+
+/* Descripción de cada tarjeta */
+.pregunta-1 p, .pregunta-2 p, .pregunta-3 p {
+    color: #333; /* Texto oscuro */
+    font-size: 14px; /* Tamaño del texto */
+    line-height: 1.5; /* Altura de línea */
+}
+
+/* Contenedor del botón */
+.contenedor-boton {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center;    /* Centra verticalmente */
+    height: 13vh;          /* Ajusta la altura al 100% del viewport */
+}
+
+/* Estilo del botón */
+.Mpreguntas {
+    border: 2px solid #f079af;
+    background-color: white;
+    color: #ff0073;
+    border-radius: 10px;
+    font-size: 17px;
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    padding: 10px 20px;
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efecto al pasar el cursor */
+.Mpreguntas:hover {
+    background-color: white; /* Cambia color de fondo */
+    color: #ff0073;             /* Cambia color del texto */
+    transform: scale(1.1);    /* Amplía sin afectar su posición */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+    cursor: pointer;
+}
+
+footer {
+    padding: 10px;
+    background-color: #fdeaf2;
+    color: black;
+}
+
+.S-ayuda {
+  font-family: "Poppins", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.S-ayuda button{
+  margin-left: -7px;   
+  cursor: pointer;
+  font-size: 16px;
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: transparent;
+  border: none;
+}
+
+.S-info {
+    text-align: center;
+    margin-top: -82px;
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;   
+}
+
+.S-info button{
+  cursor: pointer;
+  font-size: 16px;
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: transparent;
+  border: none;
+}
+
+.S-copy {
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.S-redes {
+    text-align: right;
+    margin-top: -80px;
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.S-redes a{
+    text-decoration: none;
+    outline: none;
+}
+
+.S-Whatsapp img{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 100;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+    
+}
+
+.whatsapp-message {
+    display: none; 
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    background-color: #25D366;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    z-index: 100;
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#whatsapp-icon:hover + .whatsapp-message {
+    display: block;
+}
+
+.S-redes img{
+    width: 35px;
+    height: 35px;
+    margin-right: 7px;
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+    animation-delay: 1s;
+}
+
+/* Animación de desvanecimiento para redes sociales */
+@keyframes fadeIn {
+    0% {
+        opacity: 0; /* Comienza invisible */
+        transform: translateY(20px); /* Se inicia desplazado hacia abajo */
+    }
+    100% {
+        opacity: 1; /* Se hace completamente visible */
+        transform: translateY(0); /* Se mueve hacia su posición original */
+    }
+}
+
+
+@keyframes fadeInMessage {
+    0% {
+        opacity: 0; /* Comienza invisible */
+        transform: translateY(10px); /* Comienza desplazado hacia abajo */
+    }
+    100% {
+        opacity: 1; /* Se hace completamente visible */
+        transform: translateY(0); /* Se mueve hacia su posición original */
+    }
+}
+
+/* Para darle un retraso en el fade-in a cada ícono de red social */
+.S-redes a:nth-child(1) img {
+    animation-delay: 0.5s;
+}
+
+.S-redes a:nth-child(2) img {
+    animation-delay: 1s;
+}
+
+.S-redes a:nth-child(3) img {
+    animation-delay: 1.5s;
+}

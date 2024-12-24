@@ -1,0 +1,157 @@
+<!--head-->
+<head>
+    <link rel="stylesheet" href="inicio.component.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@100;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+  <!--header-->
+  <header>
+    <div class="header-container">
+      <span class="p1">Plata</span>
+      <span class="p2">Oro</span>
+      <span class="p3">Laminado de oro</span>
+      <div>
+        <img
+          src="https://www.dropbox.com/scl/fi/fzpgpr5su2m11g1jpjzc5/simbolo-de-la-interfaz-de-busqueda.png?dl=1"
+          alt="lupa"
+        />
+      </div>
+    </div>
+  </header>
+  <!--main-->
+  <main class="main-pri">
+    <div class="Titulo" (click)="refreshPage()">
+      <div>
+        <h1>Intersol</h1>
+      </div>
+      <div>
+        <img
+          src="https://www.dropbox.com/scl/fi/cdvccxbfs32kr9cqqr2xj/imageedit_4_7414480279.png?rlkey=re2ty830aommszw02blilssor&st=84iqe44m&raw=1"
+          alt="Logo"/>
+      </div>
+    </div>
+    <div class="Sobre-N">
+      <h2>
+        Comprometidos con la elegancia <br>
+        y calidad en cada detalle.
+      </h2>
+        <p>
+          En nuestra joyería en línea, nos especializamos en ofrecer piezas únicas en plata 925, <br>
+          laminado de oro y oro, garantizando materiales duraderos y diseños que resaltan <br>
+          en cualquier ocasión. Nuestro enfoque está en brindarte una experiencia de compra <br> 
+          confiable y accesible, con joyas que complementan tu estilo y celebran <br> 
+          los momentos especiales de la vida.
+        </p>
+        <img (click)="refreshPage()" src="https://www.dropbox.com/scl/fi/1j7rwuwkvivodluj30rcq/imageedit_10_5106870348.png?rlkey=oy643hss47rgi4ektmn5qylyb&st=fn0wagan&raw=1" 
+        alt="Logo Original"/>
+        <div class="contenedor-vermas">
+          <button (click)="redirigirDos()" class="vermas" type="button">Ver más</button>
+        </div>
+        <br>
+    </div>
+  </main>
+  <!--Productos destacados-->
+  <div>
+    <h2 class="T-productos">Productos destacados</h2>
+    <div class="product-card">
+      <img src="https://www.dropbox.com/scl/fi/1j7rwuwkvivodluj30rcq/imageedit_10_5106870348.png?rlkey=oy643hss47rgi4ektmn5qylyb&st=fn0wagan&raw=1" alt="Imagen del producto" class="product-image">
+      <div class="product-info">
+        <h3 class="product-name">Nombre del Producto</h3>
+        <p class="product-description">Breve descripción del producto.</p>
+        <p class="product-material">Material: Plata 925</p>
+        <p class="product-price">$50.00</p>
+        <button type="button" class="product-button"> Comprar </button>
+      </div>
+    </div>    
+  </div>
+  <!--Preguntas frecuentes-->
+  <div>
+    <h2 class="T-preguntasF">Preguntas frecuentes</h2>
+    </div>
+    <div class="preguntas-f">
+      <div class="pregunta-1">
+        <h4>¿Se paga envío?</h4>
+        <p>Para realizar un pedido, solo necesitas seleccionar el producto que deseas, agregarlo al carrito y seguir las instrucciones de compra.</p>
+      </div>
+      <div class="pregunta-2">
+        <h4>¿Cuáles son los métodos de pago aceptados?</h4>
+        <p>Aceptamos pagos con tarjeta de crédito, débito y transferencias bancarias. También puedes pagar mediante plataformas como PayPal.</p>
+      </div>
+      <div class="pregunta-3">
+        <h4>¿Hacen envíos internacionales?</h4>
+        <p>Sí, realizamos envíos internacionales a la mayoría de los países. Consulta nuestras políticas de envío para más detalles.</p>
+      </div>
+    </div>  
+    <br><br>
+    <div class="contenedor-boton">
+      <button class="Mpreguntas">Más preguntas</button>
+  </div>
+  <br>
+  <!--footer-->
+  <footer>
+    <div class="S-ayuda">
+      <h3>Ayuda</h3>
+      <div>
+        <button (click)="redirigir()">Envíos y entregas</button>
+      </div>
+    </div>
+    <div class="S-info">
+      <h3>Información</h3>
+      <div>
+        <button (click)="redirigirDos()">Acerca de nosotros</button>
+      </div>
+    </div>
+    <div class="S-redes">
+      <h3>Redes sociales</h3>
+      <a
+        href="https://www.facebook.com/profile.php?id=61570014160605"
+        target="_blank"
+      >
+        <img
+          src="https://www.dropbox.com/scl/fi/vqz3i7j5wdpj54jtil96m/facebook.png?dl=1"
+          alt="facebook"
+        />
+      </a>
+      <a
+        href="https://www.instagram.com/intersol_joyeria?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+        target="_blank"
+      >
+        <img
+          src="https://www.dropbox.com/scl/fi/0zuhjj3yqjmvc58jfe0xe/social.png?dl=1"
+          alt="instagram"
+        />
+      </a>
+      <a
+        href="https://www.tiktok.com/@intersol_joyeria?is_from_webapp=1&sender_device=pc"
+        target="_blank"
+      >
+        <img
+          src="https://www.dropbox.com/scl/fi/id4wb912qct2emqj4zeau/tik-tok.png?dl=1"
+          alt="tiktok"
+        />
+      </a>
+    </div>
+    <br /><br />
+    <div class="S-copy">
+      <p>&copy; 2024 Joyería Intersol.</p>
+    </div>
+    <div class="S-Whatsapp">
+      <a href="https://wa.me/1234567890" target="_blank">
+        <img
+          src="https://www.dropbox.com/scl/fi/ur77ohxaq3i7tpatmyaz6/social-1.png?dl=1"
+          alt="WhatsApp"
+          id="whatsapp-icon"
+          #whatsappIcon
+        />
+      </a>
+      <span id="whatsapp-message" class="whatsapp-message" #whatsappMessage>
+        ¿Quieres hacer un pedido?
+      </span>
+    </div>
+  </footer>
+</body>
